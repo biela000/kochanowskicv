@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div id="banner">
+                    <img src="../img/img1.png" alt="Kochanowski">
+                    <div id="bannertext">
+                        <h1>Jan Kochanowski</h1>
+                        <h3>Curriculum Vitae</h3>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            Biografia
+                            <ul class="dropdownmenu">
+                                <li><button onclick="changePage(0)">Początki życia</button></li>
+                                <li><button onclick="changePage(1)">Wykształcenie</button></li>
+                                <li><button onclick="changePage(2)">Kariera dworska i kościelna</button></li>
+                                <li><button onclick="changePage(3)">Twórczość</button></li>
+                                <li><button onclick="changePage(4)">Spis utworów</button></li>
+                            </ul>
+                        </li>
+                        <li>Quiz</li>
+                        <li id="last">Credits</li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div id="bio1" class="biog">
+                    <h2>Początki życia</h2>
+                    <div class="maincont">
+                        <div class="maintext">
+                            <p>Data urodzenia Jana Kochanowskiego szacowana jest na rok 1350. Jego ojcem był Piotr Kochanowski, a matką - Anna Białoczowska. Jan był jednym z jedenaściorga dzieci małżeństwa.</p>
+                        </div>
+                        <img src="../img/img3.jpg" alt="img">
+                    </div>
+                </div>
+                <div id="bio2" class="biog">
+                    <h2>Wykształcenie</h2>
+                    <div class="maincont">
+                        <div class="maintext">
+                            <p>W 1544 roku Jan Kochanowski rozpoczął naukę na wydziale sztuk wyzwolonych Akademii Krakowskiej, jednego z ważniejszych ośrodków renesansowego humanizmu. Ostatecznie jednak, nie uzyskał żadnego stopnia akademickiego.</p>
+                            <br>
+                            <p>Pierwsza zachowana próba Kochanowskiego to dwa wpisy w egzemplarzu "Tragedii" Seneki Młodszego, które wykonał podczas przebywania w Królewcu w latach 1551-1552.</p>
+                            <br>
+                            <p>W roku 1552 wyjechał do Padwy. Studiował tam do 1555 pod nadzorem wybitnych humanistów, takich jak Bernardino Tomitano i Francesco Robortello. W tym czasie Jan został też mianowany na konsyliarza nacji polskiej na uniwersytecie w Padwie.</p>
+                            <br>
+                            <p></p>
+                        </div>
+                        <img src="../img/img4.jpg" alt="img">
+                    </div>
+                </div>
+                <div id="bio3" class="biog">
+                    <h2>Kariera dworska i kościelna</h2>
+                    <div class="maincont">
+                        <div class="maintext">
+                            <p>Po kolejnych 4 latach spędzonych na ciągłych wyjazdach, Jan Kochanowski ostatecznie wrócił do Polski w maju 1559 roku. Rozpoczął wtedy karierę dworzanina u rodzin arystokratycznych (m.in. Tęczyńskich, Tarczyńskich i Firlejów).</p>
+                            <br>
+                            <p>W roku 1563 został podkanclerzem Piotra Myszkowskiego, dzięki któremu został później sekretarzem królewskim Zygmunta Augusta. 7 lutego 1564 Kochanowski przyjął probostwo w katedrze poznańskiej. Około 2 lata później, 22 lutego 1566 roku, objął też probostwo w Zwoleniu. W 1569 brał udział w obradach sejmu walnego w Lublinie.</p>
+                            <br>
+                            <p>Artysta brał udział w elekcji Henryka Walezego 15 maja 1573 roku. Po uciecze władcy z kraju w 1574 zakończył swoją karierę dworską.</p>
+                        </div>
+                        <img src="../img/img5.jpg" alt="img">
+                    </div>
+                </div>
+                <div id="bio4" class="biog">
+                    <h2>Wykształcenie</h2>
+                    <div class="maincont">
+                        <div class="maintext">
+                            <p>W 1544 roku Jan Kochanowski rozpoczął naukę na wydziale sztuk wyzwolonych Akademii Krakowskiej, jednego z ważniejszych ośrodków renesansowego humanizmu. Ostatecznie jednak, nie uzyskał żadnego stopnia akademickiego.</p>
+                            <br>
+                            <p>Pierwsza zachowana próba Kochanowskiego to dwa wpisy w egzemplarzu "Tragedii" Seneki Młodszego, które wykonał podczas przebywania w Królewcu w latach 1551-1552.</p>
+                            <br>
+                            <p>W roku 1552 wyjechał do Padwy. Studiował tam do 1555 pod nadzorem wybitnych humanistów, takich jak Bernardino Tomitano i Francesco Robortello. W tym czasie Jan został też mianowany na konsyliarza nacji polskiej na uniwersytecie w Padwie.</p>
+                        </div>
+                        <img src="../img/img4.jpg" alt="img">
+                    </div>
+                </div>
+                <div id="bio5" class="biog">
+                    <h2>Wykształcenie</h2>
+                    <div class="maincont">
+                        <div class="maintext">
+                            <p>W 1544 roku Jan Kochanowski rozpoczął naukę na wydziale sztuk wyzwolonych Akademii Krakowskiej, jednego z ważniejszych ośrodków renesansowego humanizmu. Ostatecznie jednak, nie uzyskał żadnego stopnia akademickiego.</p>
+                            <br>
+                            <p>Pierwsza zachowana próba Kochanowskiego to dwa wpisy w egzemplarzu "Tragedii" Seneki Młodszego, które wykonał podczas przebywania w Królewcu w latach 1551-1552.</p>
+                            <br>
+                            <p>W roku 1552 wyjechał do Padwy. Studiował tam do 1555 pod nadzorem wybitnych humanistów, takich jak Bernardino Tomitano i Francesco Robortello. W tym czasie Jan został też mianowany na konsyliarza nacji polskiej na uniwersytecie w Padwie.</p>
+                        </div>
+                        <img src="../img/img4.jpg" alt="img">
+                    </div>
+                </div>
+            </main>
+            <footer>
+                
+            </footer> 
+        </div>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
