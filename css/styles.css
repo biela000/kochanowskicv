@@ -78,10 +78,17 @@ main div h2 {
 }
 
 nav ul li {
-    background-color: #62042a;
+    border: 3px solid #c3073f;
+    border-top: none;
+    border-bottom: none;
     height: 70%;
-    padding-top: 8px;
+    padding-top: 9px;
     cursor: pointer;
+    transition: all 0.2s;
+}
+
+.li1:hover {
+    background-color: rgba(98, 4, 42, 0.4);
 }
 
 #ddm {
@@ -94,28 +101,29 @@ nav ul li {
     left: 0;
     width: 100%;
     perspective: 1000px;
-    display: none;
     animation: growDown 300ms ease-in-out forwards;
+    display: none;
     transform-origin: top center;
     height: auto;
     padding: 10px;
+    flex-direction: column;
 }
 
 nav ul li:hover .dropdownmenu {
-    display: block;
+    display: flex;
 }
 
 .dropdownmenu li {
     padding: 0;
     margin: 15px auto;
     margin-bottom: 0;
-    width: auto;
-    background-color: #62042a;
+    width: 100%;
+    background-color: rgba(98, 4, 42, 0.4);
     position: relative;
 }
 
 .dropdownmenu li button {
-    background-color: #62042a;
+    background-color: rgba(98, 4, 42, 0.4);
     width: 100%;
     height: 100%;
     display: block;
@@ -123,9 +131,11 @@ nav ul li:hover .dropdownmenu {
     border: none;
     font-size: 16px;
     margin: 0;
+    transition: all 0.2s;
 }
 
 .dropdownmenu li button:hover {
+    background-color: #6f2232;
     cursor: pointer;
 }
 
@@ -136,11 +146,7 @@ nav ul li:hover .dropdownmenu {
     
       }
     
-      80% {
-    
-        transform: scaleY(1.1)
-    
-      }
+
     
       100% {
     
@@ -148,6 +154,23 @@ nav ul li:hover .dropdownmenu {
     
       }
 }
+
+@keyframes growUp {
+    0% {
+
+        transform: scaleY(1)
+    
+      }
+    
+
+    
+      100% {
+    
+        transform: scaleY(0)
+    
+      }
+}
+
 
 #bio1 {
     display: block;
@@ -253,6 +276,9 @@ footer {
     width: 300px;
     height: 75px;
     font-size: 16px;
+    transition: all 0.2s;
+    border: 3px solid #6f2232;
+    color: #ffffff;
 }
 
 .buttons button:hover {
@@ -299,6 +325,7 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    transition: all 0.2s;
 }
 
 .answer p {
@@ -307,10 +334,16 @@ footer {
 
 .answer p::first-letter {
     color: #950740;
+    transition: all 0.2s;
 }
 
 .answer:hover {
     cursor: pointer;
+    background-color: #6f2232;
+}
+
+.answer:hover p::first-letter {
+    color: #1d1d20;
 }
 
 #failscreen {
@@ -319,4 +352,9 @@ footer {
 
 #winscreen {
     display: none;
+}
+
+.buttons button:hover {
+    background-color: #1d1d20;
+    color: #6f2232;
 }
