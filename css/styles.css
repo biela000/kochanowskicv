@@ -55,7 +55,7 @@ nav ul li {
 }
 
 main {
-    margin: 50px 60px 30px 60px;
+    margin: 30px 60px 30px 60px;
     display: flex;
     flex-direction: column;
 }
