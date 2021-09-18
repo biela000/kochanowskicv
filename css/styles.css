@@ -5,10 +5,6 @@ body {
     flex-direction: column;
 }
 
-#container {
-    margin: 20px;
-}
-
 #banner {
     display: flex;
     flex-direction: row;
@@ -58,10 +54,6 @@ nav ul li {
     text-align: center;
 }
 
-nav ul li > li {
-    margin-right: 10%;
-}
-
 main {
     margin: 50px 60px 30px 60px;
     display: flex;
@@ -85,8 +77,15 @@ main div h2 {
     align-items: center;
 }
 
-li {
+nav ul li {
+    background-color: #62042a;
+    height: 70%;
+    padding-top: 8px;
     cursor: pointer;
+}
+
+#ddm {
+    margin-right: 30px;
 }
 
 .dropdownmenu {
@@ -107,6 +106,7 @@ nav ul li:hover .dropdownmenu {
 }
 
 .dropdownmenu li {
+    padding: 0;
     margin: 15px auto;
     margin-bottom: 0;
     width: auto;
@@ -212,9 +212,111 @@ nav ul li:hover .dropdownmenu {
 footer {
     background-color: #6f2232;
     height: 100px;
-    margin: 20px;
     margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.text {
+    background-color: #1d1d20;
+    width: auto;
+    border: 3px solid #6f2232;
+    margin: 30px 40px 0 40px;
+    padding: 20px;
+    display: block;
+}
+
+.text h1 {
+    font-family: 'Carattere', cursive;
+    color: #950740;
+    font-size: 50px;
+    text-align: center;
+}
+
+.text p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.buttons {
+    background-color: #1d1d20;
+    width: 700px;
+    margin: 30px auto 0 auto;
+    padding: 40px;
+    border: 3px solid #6f2232;
+}
+
+.buttons button {
+    background-color: #6f2232;
+    border: none;
+    width: 300px;
+    height: 75px;
+    font-size: 16px;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+}
+
+#quizscreen {
+    display: none;
+    flex-direction: column;
+}
+
+#question {
+    background-color: #1d1d20;
+    text-align: center;
+    padding: 65px;
+    width: 97%;
+    margin: 30px auto 0 auto;
+    height: 300px;
+    border: 3px solid #6f2232;
+}
+
+#question h2 {
+    font-size: 50px;
+    font-family: 'Carattere', cursive;
+    color: #950740;
+}
+
+#question p {
+    font-size: 20px;
+}
+
+#answers {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.answer {
+    background-color: #1d1d20;
+    border: 3px solid #6f2232;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.answer p {
+    text-align: center;
+}
+
+.answer p::first-letter {
+    color: #950740;
+}
+
+.answer:hover {
+    cursor: pointer;
+}
+
+#failscreen {
+    display: none;
+}
+
+#winscreen {
+    display: none;
 }
