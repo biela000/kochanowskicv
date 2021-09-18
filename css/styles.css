@@ -1,5 +1,8 @@
 body {
     background-color: #1a1a1d;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #container {
@@ -19,11 +22,7 @@ body {
             ),
             url("../img/img2.jpg");
     background-position: center;
-    padding: 10px;
-    border: 3px solid #6f2232;
     border-bottom: none;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
 #banner img {
@@ -33,8 +32,12 @@ body {
 }
 
 #bannertext h1 {
-    font-size: 40px;
+    font-size: 50px;
     color: #950740;
+}
+
+#bannertext h3 {
+    font-size: 30px;
 }
 
 nav ul {
@@ -47,23 +50,20 @@ nav ul {
     margin: auto;
     background-color: #6f2232;
     height: 60px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 
 nav ul li {
     width: 20%;
-    margin-right: 10%;
     position: relative;
     text-align: center;
 }
 
-#last {
-    margin: 0;
+nav ul li > li {
+    margin-right: 10%;
 }
 
 main {
-    margin: 10px 20%;
+    margin: 50px 60px 30px 60px;
     display: flex;
     flex-direction: column;
 }
@@ -74,7 +74,7 @@ main div img {
 
 main div h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-style: italic;
     color: #c3073f;
 }
@@ -83,12 +83,6 @@ main div h2 {
     margin-top: 10px;
     display: flex;
     align-items: center;
-}
-
-.maincont img {
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border: 3px solid #6f2232;
 }
 
 li {
@@ -117,7 +111,6 @@ nav ul li:hover .dropdownmenu {
     margin-bottom: 0;
     width: auto;
     background-color: #62042a;
-    border-radius: 10px;
     position: relative;
 }
 
@@ -125,7 +118,6 @@ nav ul li:hover .dropdownmenu {
     background-color: #62042a;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
     display: block;
     padding: 10px;
     border: none;
@@ -158,7 +150,7 @@ nav ul li:hover .dropdownmenu {
 }
 
 #bio1 {
-    display: none;
+    display: block;
 }
 
 #bio2 {
@@ -166,7 +158,7 @@ nav ul li:hover .dropdownmenu {
 }
 
 #bio3 {
-    display: block;
+    display: none;
 }
 
 #bio4 {
@@ -177,8 +169,20 @@ nav ul li:hover .dropdownmenu {
     display: none;
 }
 
+#bio6 {
+    display: none;
+}
+
 #bio2 .maincont img {
     width: 300px;
+}
+
+#bio4 .maincont img {
+    width: 350px;
+}
+
+#bio5 .maincont img {
+    width: 350px;
 }
 
 .maincont {
@@ -192,5 +196,25 @@ nav ul li:hover .dropdownmenu {
 }
 
 .maintext {
-    margin-right: 10px;
+    margin-right: 20px;
+}
+
+.biog h2, #bannertext h1, #bannertext h3 {
+    font-family: 'Carattere', cursive;
+}
+
+.biog {
+    background-color: #1d1d20;
+    padding: 20px;
+    border: 3px solid #6f2232;
+}
+
+footer {
+    background-color: #6f2232;
+    height: 100px;
+    margin: 20px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
