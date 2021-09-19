@@ -3,7 +3,7 @@ const quizscreen = document.getElementById('quizscreen');
 const questiondiv = document.getElementById('question');
 const answerdivs = document.getElementsByClassName('answer');
 const possibleanswers = document.getElementsByClassName('panswers');
-const questions = [ 'Data urodzenia Jana Kochanowskiego szacowana jest na rok:',
+const questions = [ 'Jan Kochanowski urodził się w roku:',
                     'Gdzie urodził się Jan Kochanowski?',
                     'Na jakim wydziale Akademii Krakowskiej Jan Kochanowski studiował od 1544 roku?',
                     'Zaznacz zdanie prawdziwe.',
@@ -34,11 +34,27 @@ function changePage(n) {
 }
 let question_number = 1;
 function ChangeQuestion() {
-    document.getElementById('qnr').innerHTML = 'Pytanie nr ' + question_number;
-    document.getElementById('q').innerHTML = questions[question_number - 1];
-    possibleanswers[0].innerHTML = 'A. ' + answers[question_number - 1][0];
-    possibleanswers[1].innerHTML = 'B. ' + answers[question_number - 1][1];
-    possibleanswers[2].innerHTML = 'C. ' + answers[question_number - 1][2];
+    questiondiv.style.opacity = 0;
+    setTimeout(() => {
+        document.getElementById('qnr').innerHTML = 'Pytanie nr ' + question_number;
+        document.getElementById('q').innerHTML = questions[question_number - 1];
+        questiondiv.style.opacity = 1;
+    }, 500);
+    answerdivs[0].style.opacity = 0;
+    answerdivs[1].style.opacity = 0;
+    answerdivs[2].style.opacity = 0;
+    setTimeout(() => {
+        answerdivs[0].innerHTML = 'A. ' + answers[question_number - 1][0];
+        answerdivs[1].innerHTML = 'B. ' + answers[question_number - 1][1];
+        answerdivs[2].innerHTML = 'C. ' + answers[question_number - 1][2];
+        answerdivs[0].style.opacity = 1;
+        setTimeout(() => {
+            answerdivs[1].style.opacity = 1;
+            setTimeout(() => {
+                answerdivs[2].style.opacity = 1;
+            }, 500);
+        }, 500);
+    }, 1000);
 }
 for (let i = 0; i < answerdivs.length; i++) {
     answerdivs[i].addEventListener('click', () => {
@@ -52,6 +68,7 @@ for (let i = 0; i < answerdivs.length; i++) {
         }
         else if (i != correct_answers[question_number - 1]) {
             quizscreen.style.display = 'none';
+            document.querySelector('#failscreentext p').innerHTML = 'Pomyliłeś się na ' + question_number + '. pytaniu.';
             document.getElementById('failscreen').style.display = 'block';
         }
     });
