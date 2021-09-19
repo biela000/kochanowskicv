@@ -15,7 +15,7 @@ const questions = [ 'Jan Kochanowski urodził się w roku:',
                     'Z ilu utworów składają się "Treny"?'
                   ];
 const answers = [ [ '1540', '1530', '1560' ],
-                  [ 'W Sycynie Północnej', 'W Sycynie Południowej', 'W Sycowie Północnym' ],
+                  [ 'W Sycynie Północnej', 'W Lublinie', 'W Sycowie Północnym' ],
                   [ 'Wydział teologii', 'Wydział prawa', 'Wydział sztuk wyzwolonych' ],
                   [ 'Jan Kochanowski wyjechał na studia do Florencji w roku 1552.', 'Jan Kochanowski nie uzyskał żadnego stopnia akademickiego w Akademii Krakowskiej.', 'Jan Kochanowski w latach 1552-1555 został mianowany na konsyliarza nacji polskiej na uniwersytecie we Florencji.' ],
                   [ 'Piotra Myszkowskiego', 'Jana Sylwiusza z Sieciechowa', 'Filipa Padniewskiego' ],
