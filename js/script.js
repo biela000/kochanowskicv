@@ -68,7 +68,7 @@ for (let i = 0; i < answerdivs.length; i++) {
         }
         else if (i != correct_answers[question_number - 1]) {
             quizscreen.style.display = 'none';
-            document.querySelector('#failscreentext p').innerHTML = 'Pomyliłeś się na ' + question_number + '. pytaniu.';
+            document.querySelector('#failscreentext p').innerHTML = 'Pomyliłaś/eś się na ' + question_number + '. pytaniu.';
             document.getElementById('failscreen').style.display = 'block';
         }
     });
